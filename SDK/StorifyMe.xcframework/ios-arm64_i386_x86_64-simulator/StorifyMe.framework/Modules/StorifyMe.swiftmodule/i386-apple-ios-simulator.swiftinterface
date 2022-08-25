@@ -14,10 +14,6 @@ public struct StorifyMeSettings {
   public static func createStoryView(parentView: UIKit.UIView, settings: StorifyMe.StorifyMeSettings) -> StorifyMe.StoriesCollectionView
   @objc deinit
 }
-extension UIKit.UIColor {
-  convenience public init(hex: Swift.String)
-  public func hexDescription(_ includeAlpha: Swift.Bool = false) -> Swift.String
-}
 @_hasMissingDesignatedInitializers public class StoeifyMeSingleton {
   public static var shared: StorifyMe.StoeifyMeSingleton
   public var settings: StorifyMe.StorifyMeSettings!
@@ -53,25 +49,10 @@ public protocol StoryEventProtocol : AnyObject {
   func onStoryOpened(story: StorifyMe.StoryModel, index: Swift.Int)
   func onStoryClose(story: StorifyMe.StoryModel)
 }
-public struct WebService {
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class Cube3dScrollView : UIKit.UIScrollView, UIKit.UIScrollViewDelegate {
-  @objc override dynamic open func awakeFromNib()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
-  @_Concurrency.MainActor(unsafe) open func scrollToViewAtIndex(_ index: Swift.Int, animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc open func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
-  @_Concurrency.MainActor(unsafe) @objc public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
-  @objc deinit
-}
 public struct WidgetConfig {
   public init()
   public mutating func setQueryParameter(name: Swift.String, value: Swift.String)
   public mutating func setSegments(tags: [Swift.String])
-}
-extension UIKit.UIImageView {
-  @_Concurrency.MainActor(unsafe) public static func returnImage(_ named: Swift.String) -> UIKit.UIImage
 }
 public struct StoryModel : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
