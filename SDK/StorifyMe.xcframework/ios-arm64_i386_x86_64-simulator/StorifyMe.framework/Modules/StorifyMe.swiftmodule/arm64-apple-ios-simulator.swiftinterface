@@ -25,7 +25,8 @@ extension UIKit.UIColor {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class StoriesCollectionView : UIKit.UICollectionView {
   @_Concurrency.MainActor(unsafe) weak public var eventDelegate: StorifyMe.StoryEventProtocol?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect, collectionViewLayout layout: UIKit.UICollectionViewLayout)
+  @_Concurrency.MainActor(unsafe) public func load()
+  @_Concurrency.MainActor(unsafe) public func setWidgetConfig(config: StorifyMe.WidgetConfig)
   @_Concurrency.MainActor(unsafe) public func refreshStoryData()
   @objc deinit
 }
@@ -61,6 +62,11 @@ public struct WebService {
   @_Concurrency.MainActor(unsafe) @objc open func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
   @_Concurrency.MainActor(unsafe) @objc public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
   @objc deinit
+}
+public struct WidgetConfig {
+  public init()
+  public mutating func setQueryParameter(name: Swift.String, value: Swift.String)
+  public mutating func setSegments(tags: [Swift.String])
 }
 extension UIKit.UIImageView {
   @_Concurrency.MainActor(unsafe) public static func returnImage(_ named: Swift.String) -> UIKit.UIImage

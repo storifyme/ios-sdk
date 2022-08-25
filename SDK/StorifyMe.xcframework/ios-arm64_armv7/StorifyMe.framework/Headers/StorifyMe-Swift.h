@@ -235,7 +235,7 @@ SWIFT_CLASS("_TtC9StorifyMe16Cube3dScrollView")
 /// this class display lis of story items
 SWIFT_CLASS("_TtC9StorifyMe21StoriesCollectionView")
 @interface StoriesCollectionView : UICollectionView
-- (nonnull instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout * _Nonnull)layout SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
 
@@ -510,7 +510,7 @@ SWIFT_CLASS("_TtC9StorifyMe16Cube3dScrollView")
 /// this class display lis of story items
 SWIFT_CLASS("_TtC9StorifyMe21StoriesCollectionView")
 @interface StoriesCollectionView : UICollectionView
-- (nonnull instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout * _Nonnull)layout SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
 
