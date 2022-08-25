@@ -7,20 +7,20 @@ import Swift
 import UIKit
 import WebKit
 import _Concurrency
-public struct StorifymeSettings {
+public struct StorifyMeSettings {
   public init(accountId: Swift.String, accessToken: Swift.String, usetWidgetId: Swift.String, color: UIKit.UIColor? = nil)
 }
 @_hasMissingDesignatedInitializers public class InitializeStoryView {
-  public static func createStoryView(parentView: UIKit.UIView, settings: StorifyMe.StorifymeSettings) -> StorifyMe.StoriesCollectionView
+  public static func createStoryView(parentView: UIKit.UIView, settings: StorifyMe.StorifyMeSettings) -> StorifyMe.StoriesCollectionView
   @objc deinit
 }
 extension UIKit.UIColor {
   convenience public init(hex: Swift.String)
   public func hexDescription(_ includeAlpha: Swift.Bool = false) -> Swift.String
 }
-@_hasMissingDesignatedInitializers public class StorifymeSingleton {
-  public static var shared: StorifyMe.StorifymeSingleton
-  public var settings: StorifyMe.StorifymeSettings!
+@_hasMissingDesignatedInitializers public class StoeifyMeSingleton {
+  public static var shared: StorifyMe.StoeifyMeSingleton
+  public var settings: StorifyMe.StorifyMeSettings!
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class StoriesCollectionView : UIKit.UICollectionView {
@@ -43,6 +43,8 @@ extension StorifyMe.StoriesCollectionView : UIKit.UICollectionViewDelegate {
     get
     set
   }
+  @_Concurrency.MainActor(unsafe) public func setWidgetConfig(config: StorifyMe.WidgetConfig)
+  @_Concurrency.MainActor(unsafe) public func load()
   @objc deinit
 }
 public protocol StoryEventProtocol : AnyObject {
