@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
     s.name         = "StorifyMe"
-    s.version      = "1.2.9"
+    s.version      = "1.2.10"
     s.summary      = "StorifyMe SDK"
     s.cocoapods_version = '>= 1.10'
     s.description  =     <<-DESC
                       StorifyMe is a story creation tool that allows companies to communicate with their customers in engaging and interactive format - web and in-app stories.
                        DESC
-  s.homepage     = "https://docs.storifyme.com/docs/ios/ios-intro"
+  s.homepage     = "https://www.storifyme.com/platform/ios"
   s.license      = { :type => "Copyright", :file => "SDKLicence" }
   s.author       = { "StorifyMe" => "contact@storifyme.com" }
   s.source       = { :git => "https://github.com/storifyme/ios-sdk.git", :tag => "#{s.version}" }
