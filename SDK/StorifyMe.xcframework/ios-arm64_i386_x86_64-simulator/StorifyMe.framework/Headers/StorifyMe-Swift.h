@@ -270,6 +270,7 @@ SWIFT_CLASS("_TtC9StorifyMe21StoriesCollectionView")
 @class UICollectionViewCell;
 
 @interface StoriesCollectionView (SWIFT_EXTENSION(StorifyMe)) <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@property (nonatomic, readonly) NSInteger numberOfSections;
 /// is return count of collection view item
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 /// is return cell for index
@@ -569,6 +570,7 @@ SWIFT_CLASS("_TtC9StorifyMe21StoriesCollectionView")
 @class UICollectionViewCell;
 
 @interface StoriesCollectionView (SWIFT_EXTENSION(StorifyMe)) <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@property (nonatomic, readonly) NSInteger numberOfSections;
 /// is return count of collection view item
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 /// is return cell for index
@@ -868,6 +870,7 @@ SWIFT_CLASS("_TtC9StorifyMe21StoriesCollectionView")
 @class UICollectionViewCell;
 
 @interface StoriesCollectionView (SWIFT_EXTENSION(StorifyMe)) <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@property (nonatomic, readonly) NSInteger numberOfSections;
 /// is return count of collection view item
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 /// is return cell for index
