@@ -259,7 +259,6 @@ SWIFT_CLASS("_TtC9StorifyMe21StoriesCollectionView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
 
-
 @class NSIndexPath;
 
 @interface StoriesCollectionView (SWIFT_EXTENSION(StorifyMe)) <UICollectionViewDelegate>
@@ -281,13 +280,14 @@ SWIFT_CLASS("_TtC9StorifyMe21StoriesCollectionView")
 
 
 
-
 /// if user need to add story user interface builder this class provide them
 SWIFT_CLASS("_TtC9StorifyMe9StoryView")
 @interface StoryView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 
@@ -559,7 +559,6 @@ SWIFT_CLASS("_TtC9StorifyMe21StoriesCollectionView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
 
-
 @class NSIndexPath;
 
 @interface StoriesCollectionView (SWIFT_EXTENSION(StorifyMe)) <UICollectionViewDelegate>
@@ -581,13 +580,14 @@ SWIFT_CLASS("_TtC9StorifyMe21StoriesCollectionView")
 
 
 
-
 /// if user need to add story user interface builder this class provide them
 SWIFT_CLASS("_TtC9StorifyMe9StoryView")
 @interface StoryView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 

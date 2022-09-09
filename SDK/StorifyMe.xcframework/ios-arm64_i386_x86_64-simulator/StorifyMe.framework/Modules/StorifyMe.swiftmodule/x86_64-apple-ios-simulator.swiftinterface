@@ -22,14 +22,10 @@ public struct CubeAttributesAnimator : StorifyMe.LayoutAttributesAnimator {
 }
 @_hasMissingDesignatedInitializers public class StoeifyMeSingleton {
   public static var shared: StorifyMe.StoeifyMeSingleton
-  public var settings: StorifyMe.StorifyMeSettings!
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class StoriesCollectionView : UIKit.UICollectionView {
   @_Concurrency.MainActor(unsafe) weak public var eventDelegate: StorifyMe.StoryEventProtocol?
-  @_Concurrency.MainActor(unsafe) public func load()
-  @_Concurrency.MainActor(unsafe) public func setWidgetConfig(config: StorifyMe.WidgetConfig)
-  @_Concurrency.MainActor(unsafe) public func refreshStoryData()
   @objc deinit
 }
 extension StorifyMe.StoriesCollectionView : UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegateFlowLayout {
@@ -50,16 +46,6 @@ extension StorifyMe.StoriesCollectionView : StorifyMe.StoryEventProtocol {
   @_Concurrency.MainActor(unsafe) public func onStoryClose(story: StorifyMe.StoryModel)
   @_Concurrency.MainActor(unsafe) public func onAction(type: Swift.String, data: [Swift.String : Any]?)
   @_Concurrency.MainActor(unsafe) public func onEvent(type: Swift.String, data: [Swift.String : Any]?)
-}
-extension StorifyMe.StoriesCollectionView : StorifyMe.WidgetCustimizationProtocol {
-  @_Concurrency.MainActor(unsafe) public func setStoryImageStyle(imageStyle: StorifyMe.StoryImageStyle)
-  @_Concurrency.MainActor(unsafe) public func setWidgetBackgroundColor(color: UIKit.UIColor)
-  @_Concurrency.MainActor(unsafe) public func setWidgetBorderWidth(dimension: CoreGraphics.CGFloat)
-  @_Concurrency.MainActor(unsafe) public func setWidgetBorderColor(color: UIKit.UIColor)
-  @_Concurrency.MainActor(unsafe) public func setWidgetBorderRadius(dimension: CoreGraphics.CGFloat)
-  @_Concurrency.MainActor(unsafe) public func setWidgetTitleStyle(widgetTitleStyle: StorifyMe.WidgetTitleStyle)
-  @_Concurrency.MainActor(unsafe) public func setWidgetTitleBorderWidth(dimension: Swift.Int)
-  @_Concurrency.MainActor(unsafe) public func setWidgetTitleBorderColor(color: UIKit.UIColor)
 }
 public enum Direction : Swift.Int {
   case undetermined, left, right, bottomUp, topDown
@@ -85,13 +71,16 @@ public protocol CubeTransitionViewDelegate : ObjectiveC.NSObject {
   @_Concurrency.MainActor(unsafe) public func reloadData()
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class StoryView : UIKit.UIView {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class StoryView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) weak public var eventDelegate: StorifyMe.StoryEventProtocol? {
     get
     set
   }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) public init(parentn: UIKit.UIView)
   @_Concurrency.MainActor(unsafe) public func setWidgetConfig(config: StorifyMe.WidgetConfig)
   @_Concurrency.MainActor(unsafe) public func load()
+  @_Concurrency.MainActor(unsafe) public func setSettings(settings: StorifyMe.StorifyMeSettings)
   @objc deinit
 }
 extension StorifyMe.StoryView : StorifyMe.WidgetCustimizationProtocol {
@@ -103,9 +92,22 @@ extension StorifyMe.StoryView : StorifyMe.WidgetCustimizationProtocol {
   @_Concurrency.MainActor(unsafe) public func setWidgetTitleStyle(widgetTitleStyle: StorifyMe.WidgetTitleStyle)
   @_Concurrency.MainActor(unsafe) public func setWidgetTitleBorderWidth(dimension: Swift.Int)
   @_Concurrency.MainActor(unsafe) public func setWidgetTitleBorderColor(color: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) public func setItemTextStyle(textStyle: StorifyMe.StoryTextStyle)
+}
+public struct StoryTextStyle {
+  public init(titleIsVisible: Swift.Bool, titleFont: UIKit.UIFont, titleSize: CoreGraphics.CGFloat, titleColor: UIKit.UIColor)
 }
 public protocol LayoutAttributesAnimator {
   func animate(collectionView: UIKit.UICollectionView, attributes: StorifyMe.AnimatedCollectionViewLayoutAttributes)
+}
+public enum ImageShape {
+  case circle
+  case square
+  public static func == (a: StorifyMe.ImageShape, b: StorifyMe.ImageShape) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public struct WidgetConfig {
   public init()
@@ -121,6 +123,8 @@ public protocol StoryEventProtocol : AnyObject {
   func onEvent(type: Swift.String, data: [Swift.String : Any]?)
 }
 public struct StoryImageStyle {
+  public init(imageHeight: Swift.Int, imageWidth: Swift.Int, imageRadius: Swift.Int, imageBorderWidth: Swift.Int, imageBorderColor: UIKit.UIColor)
+  public init(imageShape: StorifyMe.ImageShape)
 }
 public struct StoryModel : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
@@ -141,6 +145,7 @@ public protocol WidgetCustimizationProtocol {
   func setWidgetTitleBorderWidth(dimension: Swift.Int)
   func setWidgetTitleBorderColor(color: UIKit.UIColor)
   func setStoryImageStyle(imageStyle: StorifyMe.StoryImageStyle)
+  func setItemTextStyle(textStyle: StorifyMe.StoryTextStyle)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class AnimatedCollectionViewLayout : UIKit.UICollectionViewFlowLayout {
   @_Concurrency.MainActor(unsafe) open var animator: StorifyMe.LayoutAttributesAnimator?
@@ -167,3 +172,5 @@ public protocol WidgetCustimizationProtocol {
 extension StorifyMe.Direction : Swift.Equatable {}
 extension StorifyMe.Direction : Swift.Hashable {}
 extension StorifyMe.Direction : Swift.RawRepresentable {}
+extension StorifyMe.ImageShape : Swift.Equatable {}
+extension StorifyMe.ImageShape : Swift.Hashable {}
