@@ -285,7 +285,6 @@ SWIFT_CLASS("_TtC9StorifyMe9StoryView")
 
 
 
-
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
@@ -572,7 +571,6 @@ SWIFT_CLASS("_TtC9StorifyMe9StoryView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 
 

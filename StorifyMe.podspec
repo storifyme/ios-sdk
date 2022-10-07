@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "StorifyMe"
-    s.version      = "1.2.20"
+    s.version      = "1.2.21"
     s.summary      = "StorifyMe SDK"
     s.cocoapods_version = '>= 1.10'
     s.description  =     <<-DESC
@@ -14,6 +14,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.ios.vendored_frameworks = "SDK/StorifyMe.xcframework"
   s.preserve_paths = 'SDK/StorifyMe.xcframework'
-  s.resource = 'SDK/StorifyMe.bundle'
   s.dependency 'SDWebImage'
 end
