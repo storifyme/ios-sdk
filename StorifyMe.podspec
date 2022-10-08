@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "StorifyMe"
-    s.version      = "1.2.22"
+    s.version      = "1.2.23"
     s.summary      = "StorifyMe SDK"
     s.cocoapods_version = '>= 1.10'
     s.description  =     <<-DESC
