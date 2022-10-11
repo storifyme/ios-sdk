@@ -7,6 +7,9 @@ import Swift
 import UIKit
 import WebKit
 import _Concurrency
+extension UIKit.UIColor {
+  convenience public init(hex: Swift.String)
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class StoriesCollectionView : UIKit.UICollectionView {
   @_Concurrency.MainActor(unsafe) weak public var eventDelegate: StorifyMe.StoryEventProtocol?
   @objc deinit
