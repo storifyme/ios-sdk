@@ -8,8 +8,10 @@ import Swift
 import UIKit
 import WebKit
 import _Concurrency
-public struct StorifyMeSettings {
-  public init(accountId: Swift.String, accessToken: Swift.String, usetWidgetId: Swift.String, color: UIKit.UIColor? = nil)
+@_hasMissingDesignatedInitializers public class StorifyMe {
+  public static let shared: StorifyMe.StorifyMe
+  public func initialization(apiKey: Swift.String, accountId: Swift.String)
+  @objc deinit
 }
 public struct CubeAttributesAnimator : StorifyMe.LayoutAttributesAnimator {
   public var perspective: CoreGraphics.CGFloat
@@ -46,10 +48,9 @@ extension StorifyMe.StoriesCollectionView : StorifyMe.StoryEventProtocol {
     set
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @_Concurrency.MainActor(unsafe) public init(parentn: UIKit.UIView)
   @_Concurrency.MainActor(unsafe) public func setWidgetConfig(config: StorifyMe.WidgetConfig)
   @_Concurrency.MainActor(unsafe) public func load()
-  @_Concurrency.MainActor(unsafe) public func setSettings(settings: StorifyMe.StorifyMeSettings)
+  @_Concurrency.MainActor(unsafe) public func setWidgetId(widgetId: Swift.String)
   @objc deinit
 }
 extension StorifyMe.StoryView : StorifyMe.WidgetCustimizationProtocol {
@@ -104,6 +105,9 @@ public struct WidgetTitleStyle {
 }
 extension StorifyMe.WidgetTitleStyle : Swift.Equatable {
   public static func == (lhs: StorifyMe.WidgetTitleStyle, rhs: StorifyMe.WidgetTitleStyle) -> Swift.Bool
+}
+public struct StorifyMeAccount {
+  public init(accountId: Swift.String, apiKey: Swift.String)
 }
 public protocol WidgetCustimizationProtocol {
   func setWidgetBackgroundColor(color: UIKit.UIColor)
