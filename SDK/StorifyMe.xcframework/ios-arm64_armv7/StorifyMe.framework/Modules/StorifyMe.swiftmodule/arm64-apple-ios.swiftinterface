@@ -38,6 +38,7 @@ extension StorifyMe.StoriesCollectionView : StorifyMe.StoryEventProtocol {
     get
     set
   }
+  @_Concurrency.MainActor(unsafe) weak public var sizeDelegate: StorifyMe.StoryfyMeSizeProtocol?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) public func setWidgetConfig(config: StorifyMe.WidgetConfig)
   @_Concurrency.MainActor(unsafe) public func load()
@@ -59,6 +60,9 @@ extension StorifyMe.StoryView : StorifyMe.WidgetCustimizationProtocol {
   public static let shared: StorifyMe.StorifyMeInstance
   public func initialization(apiKey: Swift.String, accountId: Swift.String)
   @objc deinit
+}
+public protocol StoryfyMeSizeProtocol : AnyObject {
+  func heightForStoryView(size: CoreGraphics.CGFloat)
 }
 public struct CubeAttributesAnimator : StorifyMe.LayoutAttributesAnimator {
   public var perspective: CoreGraphics.CGFloat
