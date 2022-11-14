@@ -1,4 +1,0 @@
-framework module StorifyMe {
-  header "StorifyMe-Swift.h"
-  requires objc
-}
