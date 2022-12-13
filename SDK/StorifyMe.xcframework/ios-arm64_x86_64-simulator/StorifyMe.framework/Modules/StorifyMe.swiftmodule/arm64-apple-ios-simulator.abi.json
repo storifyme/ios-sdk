@@ -41,13 +41,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "StorifyMe"
-      },
-      {
-        "kind": "Import",
         "name": "SDWebImage",
         "printedName": "SDWebImage",
         "declKind": "Import",
@@ -73,6 +66,16 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "StorifyMe"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StorifyMe",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -798,6 +801,16 @@
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
+        "moduleName": "StorifyMe",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
         "moduleName": "StorifyMe"
       },
       {
@@ -1348,6 +1361,62 @@
           },
           {
             "kind": "Function",
+            "name": "setWidgetInnerHorizontalPadding",
+            "printedName": "setWidgetInnerHorizontalPadding(padding:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9StorifyMe9StoryViewC31setWidgetInnerHorizontalPadding7paddingy14CoreFoundation7CGFloatV_tF",
+            "mangledName": "$s9StorifyMe9StoryViewC31setWidgetInnerHorizontalPadding7paddingy12CoreGraphics7CGFloatV_tF",
+            "moduleName": "StorifyMe",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setWidgetInnerVerticalPadding",
+            "printedName": "setWidgetInnerVerticalPadding(padding:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9StorifyMe9StoryViewC29setWidgetInnerVerticalPadding7paddingy14CoreFoundation7CGFloatV_tF",
+            "mangledName": "$s9StorifyMe9StoryViewC29setWidgetInnerVerticalPadding7paddingy12CoreGraphics7CGFloatV_tF",
+            "moduleName": "StorifyMe",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setItemTextStyle",
             "printedName": "setItemTextStyle(textStyle:)",
             "children": [
@@ -1366,6 +1435,62 @@
             "declKind": "Func",
             "usr": "s:9StorifyMe9StoryViewC16setItemTextStyle04textH0yAA0cgH0V_tF",
             "mangledName": "$s9StorifyMe9StoryViewC16setItemTextStyle04textH0yAA0cgH0V_tF",
+            "moduleName": "StorifyMe",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setStoryLiveStyle",
+            "printedName": "setStoryLiveStyle(options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StoryLiveStyleOptions",
+                "printedName": "StorifyMe.StoryLiveStyleOptions",
+                "usr": "s:9StorifyMe21StoryLiveStyleOptionsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9StorifyMe9StoryViewC03setC9LiveStyle7optionsyAA0cfG7OptionsV_tF",
+            "mangledName": "$s9StorifyMe9StoryViewC03setC9LiveStyle7optionsyAA0cfG7OptionsV_tF",
+            "moduleName": "StorifyMe",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setStorySeenStyle",
+            "printedName": "setStorySeenStyle(options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorySeenStyleOptions",
+                "printedName": "StorifyMe.StorySeenStyleOptions",
+                "usr": "s:9StorifyMe21StorySeenStyleOptionsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9StorifyMe9StoryViewC03setC9SeenStyle7optionsyAA0cfG7OptionsV_tF",
+            "mangledName": "$s9StorifyMe9StoryViewC03setC9SeenStyle7optionsyAA0cfG7OptionsV_tF",
             "moduleName": "StorifyMe",
             "declAttributes": [
               "Custom",
@@ -1634,6 +1759,16 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "StorifyMe"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit.UILabel",
+        "printedName": "UIKit.UILabel",
+        "declKind": "Import",
+        "moduleName": "StorifyMe",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -1920,6 +2055,737 @@
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
+        "moduleName": "StorifyMe",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StoryLiveStyleOptions",
+        "printedName": "StoryLiveStyleOptions",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "label",
+            "printedName": "label",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9StorifyMe21StoryLiveStyleOptionsV5labelSSSgvp",
+            "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV5labelSSSgvp",
+            "moduleName": "StorifyMe",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9StorifyMe21StoryLiveStyleOptionsV5labelSSSgvg",
+                "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV5labelSSSgvg",
+                "moduleName": "StorifyMe",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "background",
+            "printedName": "background",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9StorifyMe21StoryLiveStyleOptionsV10backgroundSo7UIColorCSgvp",
+            "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV10backgroundSo7UIColorCSgvp",
+            "moduleName": "StorifyMe",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9StorifyMe21StoryLiveStyleOptionsV10backgroundSo7UIColorCSgvg",
+                "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV10backgroundSo7UIColorCSgvg",
+                "moduleName": "StorifyMe",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "labelColor",
+            "printedName": "labelColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9StorifyMe21StoryLiveStyleOptionsV10labelColorSo7UIColorCSgvp",
+            "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV10labelColorSo7UIColorCSgvp",
+            "moduleName": "StorifyMe",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9StorifyMe21StoryLiveStyleOptionsV10labelColorSo7UIColorCSgvg",
+                "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV10labelColorSo7UIColorCSgvg",
+                "moduleName": "StorifyMe",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "labelTextSize",
+            "printedName": "labelTextSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9StorifyMe21StoryLiveStyleOptionsV13labelTextSizeSiSgvp",
+            "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV13labelTextSizeSiSgvp",
+            "moduleName": "StorifyMe",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9StorifyMe21StoryLiveStyleOptionsV13labelTextSizeSiSgvg",
+                "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV13labelTextSizeSiSgvg",
+                "moduleName": "StorifyMe",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "verticalPadding",
+            "printedName": "verticalPadding",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9StorifyMe21StoryLiveStyleOptionsV15verticalPadding14CoreFoundation7CGFloatVSgvp",
+            "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV15verticalPadding12CoreGraphics7CGFloatVSgvp",
+            "moduleName": "StorifyMe",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreGraphics.CGFloat?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9StorifyMe21StoryLiveStyleOptionsV15verticalPadding14CoreFoundation7CGFloatVSgvg",
+                "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV15verticalPadding12CoreGraphics7CGFloatVSgvg",
+                "moduleName": "StorifyMe",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "horizontalPadding",
+            "printedName": "horizontalPadding",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9StorifyMe21StoryLiveStyleOptionsV17horizontalPadding14CoreFoundation7CGFloatVSgvp",
+            "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV17horizontalPadding12CoreGraphics7CGFloatVSgvp",
+            "moduleName": "StorifyMe",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreGraphics.CGFloat?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9StorifyMe21StoryLiveStyleOptionsV17horizontalPadding14CoreFoundation7CGFloatVSgvg",
+                "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV17horizontalPadding12CoreGraphics7CGFloatVSgvg",
+                "moduleName": "StorifyMe",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cornerRadius",
+            "printedName": "cornerRadius",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9StorifyMe21StoryLiveStyleOptionsV12cornerRadius14CoreFoundation7CGFloatVSgvp",
+            "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV12cornerRadius12CoreGraphics7CGFloatVSgvp",
+            "moduleName": "StorifyMe",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreGraphics.CGFloat?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9StorifyMe21StoryLiveStyleOptionsV12cornerRadius14CoreFoundation7CGFloatVSgvg",
+                "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV12cornerRadius12CoreGraphics7CGFloatVSgvg",
+                "moduleName": "StorifyMe",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "borderWidth",
+            "printedName": "borderWidth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9StorifyMe21StoryLiveStyleOptionsV11borderWidthSiSgvp",
+            "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV11borderWidthSiSgvp",
+            "moduleName": "StorifyMe",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9StorifyMe21StoryLiveStyleOptionsV11borderWidthSiSgvg",
+                "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV11borderWidthSiSgvg",
+                "moduleName": "StorifyMe",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "borderColor",
+            "printedName": "borderColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9StorifyMe21StoryLiveStyleOptionsV11borderColorSo7UIColorCSgvp",
+            "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV11borderColorSo7UIColorCSgvp",
+            "moduleName": "StorifyMe",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9StorifyMe21StoryLiveStyleOptionsV11borderColorSo7UIColorCSgvg",
+                "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV11borderColorSo7UIColorCSgvg",
+                "moduleName": "StorifyMe",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(label:background:labelColor:labelTextSize:borderWidth:borderColor:horizontalPadding:verticalPadding:cornerRadius:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StoryLiveStyleOptions",
+                "printedName": "StorifyMe.StoryLiveStyleOptions",
+                "usr": "s:9StorifyMe21StoryLiveStyleOptionsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9StorifyMe21StoryLiveStyleOptionsV5label10background0G5Color0G8TextSize11borderWidth0lI017horizontalPadding08verticalO012cornerRadiusACSSSg_So7UIColorCSgAPSiSgAqP14CoreFoundation7CGFloatVSgA2Utcfc",
+            "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV5label10background0G5Color0G8TextSize11borderWidth0lI017horizontalPadding08verticalO012cornerRadiusACSSSg_So7UIColorCSgAPSiSgAqP12CoreGraphics7CGFloatVSgA2Utcfc",
+            "moduleName": "StorifyMe",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9StorifyMe21StoryLiveStyleOptionsV",
+        "mangledName": "$s9StorifyMe21StoryLiveStyleOptionsV",
+        "moduleName": "StorifyMe",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
         "moduleName": "StorifyMe"
       },
       {
@@ -1928,6 +2794,16 @@
         "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "StorifyMe"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StorifyMe",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -3095,6 +3971,281 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StorifyMe",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StorySeenStyleOptions",
+        "printedName": "StorySeenStyleOptions",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "opacity",
+            "printedName": "opacity",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9StorifyMe21StorySeenStyleOptionsV7opacity14CoreFoundation7CGFloatVSgvp",
+            "mangledName": "$s9StorifyMe21StorySeenStyleOptionsV7opacity12CoreGraphics7CGFloatVSgvp",
+            "moduleName": "StorifyMe",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreGraphics.CGFloat?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9StorifyMe21StorySeenStyleOptionsV7opacity14CoreFoundation7CGFloatVSgvg",
+                "mangledName": "$s9StorifyMe21StorySeenStyleOptionsV7opacity12CoreGraphics7CGFloatVSgvg",
+                "moduleName": "StorifyMe",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "borderWidth",
+            "printedName": "borderWidth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9StorifyMe21StorySeenStyleOptionsV11borderWidthSiSgvp",
+            "mangledName": "$s9StorifyMe21StorySeenStyleOptionsV11borderWidthSiSgvp",
+            "moduleName": "StorifyMe",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9StorifyMe21StorySeenStyleOptionsV11borderWidthSiSgvg",
+                "mangledName": "$s9StorifyMe21StorySeenStyleOptionsV11borderWidthSiSgvg",
+                "moduleName": "StorifyMe",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "borderColor",
+            "printedName": "borderColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9StorifyMe21StorySeenStyleOptionsV11borderColorSo7UIColorCSgvp",
+            "mangledName": "$s9StorifyMe21StorySeenStyleOptionsV11borderColorSo7UIColorCSgvp",
+            "moduleName": "StorifyMe",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9StorifyMe21StorySeenStyleOptionsV11borderColorSo7UIColorCSgvg",
+                "mangledName": "$s9StorifyMe21StorySeenStyleOptionsV11borderColorSo7UIColorCSgvg",
+                "moduleName": "StorifyMe",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(opacity:borderWidth:borderColor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StorySeenStyleOptions",
+                "printedName": "StorifyMe.StorySeenStyleOptions",
+                "usr": "s:9StorifyMe21StorySeenStyleOptionsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9StorifyMe21StorySeenStyleOptionsV7opacity11borderWidth0H5ColorAC14CoreFoundation7CGFloatVSg_SiSgSo7UIColorCSgtcfc",
+            "mangledName": "$s9StorifyMe21StorySeenStyleOptionsV7opacity11borderWidth0H5ColorAC12CoreGraphics7CGFloatVSg_SiSgSo7UIColorCSgtcfc",
+            "moduleName": "StorifyMe",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9StorifyMe21StorySeenStyleOptionsV",
+        "mangledName": "$s9StorifyMe21StorySeenStyleOptionsV",
+        "moduleName": "StorifyMe",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3831,6 +4982,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StorifyMe",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit.UIViewController",
         "printedName": "UIKit.UIViewController",
         "declKind": "Import",
@@ -4031,13 +5192,6 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "StorifyMe"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "StorifyMe"
       },
@@ -4362,13 +5516,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "StorifyMe"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -4570,6 +5717,60 @@
           },
           {
             "kind": "Function",
+            "name": "setWidgetInnerHorizontalPadding",
+            "printedName": "setWidgetInnerHorizontalPadding(padding:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9StorifyMe27WidgetCustimizationProtocolP03setC22InnerHorizontalPadding7paddingy14CoreFoundation7CGFloatV_tF",
+            "mangledName": "$s9StorifyMe27WidgetCustimizationProtocolP03setC22InnerHorizontalPadding7paddingy12CoreGraphics7CGFloatV_tF",
+            "moduleName": "StorifyMe",
+            "genericSig": "<τ_0_0 where τ_0_0 : StorifyMe.WidgetCustimizationProtocol>",
+            "sugared_genericSig": "<Self where Self : StorifyMe.WidgetCustimizationProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setWidgetInnerVerticalPadding",
+            "printedName": "setWidgetInnerVerticalPadding(padding:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9StorifyMe27WidgetCustimizationProtocolP03setC20InnerVerticalPadding7paddingy14CoreFoundation7CGFloatV_tF",
+            "mangledName": "$s9StorifyMe27WidgetCustimizationProtocolP03setC20InnerVerticalPadding7paddingy12CoreGraphics7CGFloatV_tF",
+            "moduleName": "StorifyMe",
+            "genericSig": "<τ_0_0 where τ_0_0 : StorifyMe.WidgetCustimizationProtocol>",
+            "sugared_genericSig": "<Self where Self : StorifyMe.WidgetCustimizationProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setStoryImageStyle",
             "printedName": "setStoryImageStyle(imageStyle:)",
             "children": [
@@ -4615,6 +5816,60 @@
             "declKind": "Func",
             "usr": "s:9StorifyMe27WidgetCustimizationProtocolP16setItemTextStyle04textI0yAA05StoryhI0V_tF",
             "mangledName": "$s9StorifyMe27WidgetCustimizationProtocolP16setItemTextStyle04textI0yAA05StoryhI0V_tF",
+            "moduleName": "StorifyMe",
+            "genericSig": "<τ_0_0 where τ_0_0 : StorifyMe.WidgetCustimizationProtocol>",
+            "sugared_genericSig": "<Self where Self : StorifyMe.WidgetCustimizationProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setStoryLiveStyle",
+            "printedName": "setStoryLiveStyle(options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StoryLiveStyleOptions",
+                "printedName": "StorifyMe.StoryLiveStyleOptions",
+                "usr": "s:9StorifyMe21StoryLiveStyleOptionsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9StorifyMe27WidgetCustimizationProtocolP17setStoryLiveStyle7optionsyAA0ghI7OptionsV_tF",
+            "mangledName": "$s9StorifyMe27WidgetCustimizationProtocolP17setStoryLiveStyle7optionsyAA0ghI7OptionsV_tF",
+            "moduleName": "StorifyMe",
+            "genericSig": "<τ_0_0 where τ_0_0 : StorifyMe.WidgetCustimizationProtocol>",
+            "sugared_genericSig": "<Self where Self : StorifyMe.WidgetCustimizationProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setStorySeenStyle",
+            "printedName": "setStorySeenStyle(options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorySeenStyleOptions",
+                "printedName": "StorifyMe.StorySeenStyleOptions",
+                "usr": "s:9StorifyMe21StorySeenStyleOptionsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9StorifyMe27WidgetCustimizationProtocolP17setStorySeenStyle7optionsyAA0ghI7OptionsV_tF",
+            "mangledName": "$s9StorifyMe27WidgetCustimizationProtocolP17setStorySeenStyle7optionsyAA0ghI7OptionsV_tF",
             "moduleName": "StorifyMe",
             "genericSig": "<τ_0_0 where τ_0_0 : StorifyMe.WidgetCustimizationProtocol>",
             "sugared_genericSig": "<Self where Self : StorifyMe.WidgetCustimizationProtocol>",
@@ -4823,44 +6078,51 @@
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Collection Cell\/StoryCollectionCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 285,
+      "offset": 261,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Collection Cell\/StoryCollectionCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 380,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Collection Cell\/StoryCollectionCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 387,
+      "offset": 482,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Collection Cell\/StoryCollectionCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 555,
+      "offset": 650,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Collection Cell\/StoryCollectionCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 591,
+      "offset": 686,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Collection Cell\/StoryCollectionCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 769,
+      "offset": 862,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Collection Cell\/StoryCollectionCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 885,
+      "offset": 898,
       "length": 1,
-      "value": "0"
+      "value": "1"
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Extensions\/UIColorExtension.swift",
@@ -4970,14 +6232,14 @@
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/View Controller\/StoriesCollectionView.swift",
       "kind": "Array",
-      "offset": 664,
+      "offset": 1081,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/View Controller\/StoriesCollectionView.swift",
       "kind": "Array",
-      "offset": 751,
+      "offset": 1270,
       "length": 2,
       "value": "[]"
     },
@@ -5096,21 +6358,21 @@
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/ModalDismissalController.swift",
       "kind": "IntegerLiteral",
-      "offset": 105,
+      "offset": 101,
       "length": 4,
       "value": "1300"
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/ModalDismissalController.swift",
       "kind": "FloatLiteral",
-      "offset": 167,
+      "offset": 163,
       "length": 4,
       "value": "0.35"
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/ModalDismissalController.swift",
       "kind": "FloatLiteral",
-      "offset": 227,
+      "offset": 223,
       "length": 3,
       "value": "0.2"
     },
@@ -5137,22 +6399,29 @@
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/View Controller\/PreviewStoryCollectionController.swift",
-      "kind": "StringLiteral",
-      "offset": 193,
-      "length": 28,
-      "value": "\"previewStoryCollectionCell\""
-    },
-    {
-      "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/View Controller\/PreviewStoryCollectionController.swift",
       "kind": "Array",
-      "offset": 396,
+      "offset": 294,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/View Controller\/PreviewStoryCollectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 393,
+      "length": 28,
+      "value": "\"previewStoryCollectionCell\""
+    },
+    {
+      "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/View Controller\/PreviewStoryCollectionController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 476,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/View Controller\/PreviewStoryCollectionController.swift",
       "kind": "Array",
-      "offset": 447,
+      "offset": 573,
       "length": 2,
       "value": "[]"
     },
@@ -5181,62 +6450,62 @@
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/Constant.swift",
       "kind": "StringLiteral",
       "offset": 88,
-      "length": 23,
-      "value": "\"https:\/\/storifyme.xyz\""
+      "length": 27,
+      "value": "\"https:\/\/dev.storifyme.xyz\""
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 128,
-      "length": 30,
-      "value": "\"https:\/\/storifyme.xyz\/api\/v1\""
+      "offset": 131,
+      "length": 34,
+      "value": "\"https:\/\/dev.storifyme.xyz\/api\/v1\""
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 304,
+      "offset": 426,
       "length": 10,
       "value": "\"\/widgets\""
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 346,
+      "offset": 468,
       "length": 10,
       "value": "\"\/stories\""
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 387,
+      "offset": 509,
       "length": 11,
       "value": "\"accountId\""
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 432,
+      "offset": 554,
       "length": 26,
       "value": "\"x-storifyme-access-token\""
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 497,
+      "offset": 623,
       "length": 29,
       "value": "\"com.storifyMe.com.StorifyMe\""
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 562,
+      "offset": 688,
       "length": 11,
       "value": "\"StorifyMe\""
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 624,
+      "offset": 750,
       "length": 22,
       "value": "\"executeActionHandler\""
     },
@@ -5244,62 +6513,62 @@
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/Constant.swift",
       "kind": "StringLiteral",
       "offset": 88,
-      "length": 23,
-      "value": "\"https:\/\/storifyme.xyz\""
+      "length": 27,
+      "value": "\"https:\/\/dev.storifyme.xyz\""
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 128,
-      "length": 30,
-      "value": "\"https:\/\/storifyme.xyz\/api\/v1\""
+      "offset": 131,
+      "length": 34,
+      "value": "\"https:\/\/dev.storifyme.xyz\/api\/v1\""
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 304,
+      "offset": 426,
       "length": 10,
       "value": "\"\/widgets\""
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 346,
+      "offset": 468,
       "length": 10,
       "value": "\"\/stories\""
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 387,
+      "offset": 509,
       "length": 11,
       "value": "\"accountId\""
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 432,
+      "offset": 554,
       "length": 26,
       "value": "\"x-storifyme-access-token\""
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 497,
+      "offset": 623,
       "length": 29,
       "value": "\"com.storifyMe.com.StorifyMe\""
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 562,
+      "offset": 688,
       "length": 11,
       "value": "\"StorifyMe\""
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/Utilities\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 624,
+      "offset": 750,
       "length": 22,
       "value": "\"executeActionHandler\""
     },
@@ -5341,35 +6610,35 @@
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/View\/StoryWebView.swift",
       "kind": "Array",
-      "offset": 215,
+      "offset": 263,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/View\/StoryWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 247,
+      "offset": 295,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/View\/StoryWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 277,
+      "offset": 325,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/View\/StoryWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 309,
+      "offset": 357,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stefandjordjevic\/Desktop\/iosProject\/storyfyMe-V2\/TestMyStory\/StorifyMe\/View\/StoryWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 368,
+      "offset": 416,
       "length": 5,
       "value": "false"
     }

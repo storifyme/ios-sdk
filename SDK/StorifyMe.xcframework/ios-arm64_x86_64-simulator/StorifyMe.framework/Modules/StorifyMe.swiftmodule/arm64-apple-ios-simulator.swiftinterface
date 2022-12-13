@@ -1,11 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
-// swift-module-flags: -target arm64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name StorifyMe
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name StorifyMe
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 import SDWebImage
 import Swift
 import UIKit
+import UIKit.UILabel
 import UIKit.UIViewController
 import WebKit
 import _Concurrency
@@ -57,7 +58,11 @@ extension StorifyMe.StoryView : StorifyMe.WidgetCustimizationProtocol {
   @_Concurrency.MainActor(unsafe) public func setWidgetTitleStyle(widgetTitleStyle: StorifyMe.WidgetTitleStyle)
   @_Concurrency.MainActor(unsafe) public func setWidgetTitleBorderWidth(dimension: Swift.Int)
   @_Concurrency.MainActor(unsafe) public func setWidgetTitleBorderColor(color: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) public func setWidgetInnerHorizontalPadding(padding: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func setWidgetInnerVerticalPadding(padding: CoreFoundation.CGFloat)
   @_Concurrency.MainActor(unsafe) public func setItemTextStyle(textStyle: StorifyMe.StoryTextStyle)
+  @_Concurrency.MainActor(unsafe) public func setStoryLiveStyle(options: StorifyMe.StoryLiveStyleOptions)
+  @_Concurrency.MainActor(unsafe) public func setStorySeenStyle(options: StorifyMe.StorySeenStyleOptions)
 }
 @_hasMissingDesignatedInitializers public class StorifyMeInstance {
   public static let shared: StorifyMe.StorifyMeInstance
@@ -72,6 +77,18 @@ public struct CubeAttributesAnimator : StorifyMe.LayoutAttributesAnimator {
   public var totalAngle: CoreFoundation.CGFloat
   public init(perspective: CoreFoundation.CGFloat = -1 / 500, totalAngle: CoreFoundation.CGFloat = .pi / 2)
   public func animate(collectionView: UIKit.UICollectionView, attributes: StorifyMe.AnimatedCollectionViewLayoutAttributes)
+}
+public struct StoryLiveStyleOptions {
+  public let label: Swift.String?
+  public let background: UIKit.UIColor?
+  public let labelColor: UIKit.UIColor?
+  public let labelTextSize: Swift.Int?
+  public let verticalPadding: CoreFoundation.CGFloat?
+  public let horizontalPadding: CoreFoundation.CGFloat?
+  public let cornerRadius: CoreFoundation.CGFloat?
+  public let borderWidth: Swift.Int?
+  public let borderColor: UIKit.UIColor?
+  public init(label: Swift.String? = nil, background: UIKit.UIColor? = nil, labelColor: UIKit.UIColor? = nil, labelTextSize: Swift.Int? = nil, borderWidth: Swift.Int? = nil, borderColor: UIKit.UIColor? = nil, horizontalPadding: CoreFoundation.CGFloat? = nil, verticalPadding: CoreFoundation.CGFloat? = nil, cornerRadius: CoreFoundation.CGFloat? = nil)
 }
 public struct StoryTextStyle {
   public init(titleIsVisible: Swift.Bool, titleFont: UIKit.UIFont, titleSize: CoreFoundation.CGFloat, titleColor: UIKit.UIColor)
@@ -97,6 +114,12 @@ public struct StoryTextStyle {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func isEqual(_ object: Any?) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
   @objc deinit
+}
+public struct StorySeenStyleOptions {
+  public let opacity: CoreFoundation.CGFloat?
+  public let borderWidth: Swift.Int?
+  public let borderColor: UIKit.UIColor?
+  public init(opacity: CoreFoundation.CGFloat? = nil, borderWidth: Swift.Int? = nil, borderColor: UIKit.UIColor? = nil)
 }
 public struct StorifyMeAccount {
   public init(accountId: Swift.String, apiKey: Swift.String)
@@ -153,8 +176,12 @@ public protocol WidgetCustimizationProtocol {
   func setWidgetTitleStyle(widgetTitleStyle: StorifyMe.WidgetTitleStyle)
   func setWidgetTitleBorderWidth(dimension: Swift.Int)
   func setWidgetTitleBorderColor(color: UIKit.UIColor)
+  func setWidgetInnerHorizontalPadding(padding: CoreFoundation.CGFloat)
+  func setWidgetInnerVerticalPadding(padding: CoreFoundation.CGFloat)
   func setStoryImageStyle(imageStyle: StorifyMe.StoryImageStyle)
   func setItemTextStyle(textStyle: StorifyMe.StoryTextStyle)
+  func setStoryLiveStyle(options: StorifyMe.StoryLiveStyleOptions)
+  func setStorySeenStyle(options: StorifyMe.StorySeenStyleOptions)
 }
 extension StorifyMe.ImageShape : Swift.Equatable {}
 extension StorifyMe.ImageShape : Swift.Hashable {}
